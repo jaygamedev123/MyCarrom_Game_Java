@@ -1,0 +1,30 @@
+2025-09-11 08:11:47 [restartedMain] INFO  c.gamestriker.GamestrikerApplication - Starting GamestrikerApplication using Java 17.0.5 with PID 832 (D:\JayKumar\MyCarrom_Game_Java\target\classes started by renug in D:\JayKumar\MyCarrom_Game_Java)
+2025-09-11 08:11:47 [restartedMain] INFO  c.gamestriker.GamestrikerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-11 08:11:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11 08:11:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11 08:11:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-11 08:11:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-11 08:11:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11 08:11:49 [restartedMain] INFO  o.a.c.c.C.[.[.[/gamestriker] - Initializing Spring embedded WebApplicationContext
+2025-09-11 08:11:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1943 ms
+2025-09-11 08:11:49 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-09-11 08:11:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+2025-09-11 08:11:49 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-11 08:11:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-11 08:11:49 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-11 08:11:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-11 08:11:49 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-11 08:11:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/gamestriker'
+2025-09-11 08:11:50 [restartedMain] INFO  c.gamestriker.GamestrikerApplication - Started GamestrikerApplication in 3.662 seconds (process running for 4.225)
+2025-09-11 08:11:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11 08:11:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-11 21:44:37 [main] INFO  c.g.GamestrikerApplicationTests - Starting GamestrikerApplicationTests using Java 17.0.5 with PID 27336 (started by renug in D:\JayKumar\MyCarrom_Game_Java)
+2025-09-11 21:44:37 [main] INFO  c.g.GamestrikerApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-11 21:44:37 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6ad5923a
+2025-09-11 21:44:38 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+2025-09-11 21:44:39 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-11 21:44:39 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-11 21:44:39 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-11 21:44:39 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoints beneath base path '/actuator'
+2025-09-11 21:44:39 [main] INFO  c.g.GamestrikerApplicationTests - Started GamestrikerApplicationTests in 2.523 seconds (process running for 4.0)
+2025-09-11 21:44:41 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6ad5923a, started on Thu Sep 11 21:44:37 IST 2025
