@@ -1,6 +1,7 @@
 package com.gamestriker.dto;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,8 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Games extends  Auditing{
+
+    @Id
     private String gameId;
     private String gameName;
     private String genre;

@@ -1,7 +1,9 @@
 package com.gamestriker.service;
 
 import com.gamestriker.service.impl.ITournamentService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TournamentServiceImpl implements ITournamentService {
     @Override
     public void createTournament(String name, String game, String date) {

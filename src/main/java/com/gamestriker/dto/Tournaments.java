@@ -12,7 +12,7 @@ import java.util.UUID;
 @Entity
 @Getter
 @Setter
-public class Tournament extends Auditing {
+public class Tournaments extends Auditing {
     @Id
     private String tournamentId;
     private String gameId;

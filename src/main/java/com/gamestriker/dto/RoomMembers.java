@@ -1,6 +1,7 @@
 package com.gamestriker.dto;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import lombok.Setter;
 @Getter
 public class RoomMembers extends Auditing{
 
+    @Id
     private String roomMemberId;
     private String roomId;
     private String userId;
