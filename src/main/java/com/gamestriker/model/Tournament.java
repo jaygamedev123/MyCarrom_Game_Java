@@ -30,6 +30,6 @@ public class Tournament {
 
     @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TournamentRegistration> registration = new ArrayList<>();
-    enum TournamentStatus {DRAFT, REGISTRATION_OPEN, ONGOING, CANCELED}
+    public enum TournamentStatus {DRAFT, REGISTRATION_OPEN, ONGOING, CANCELED}
 
 }

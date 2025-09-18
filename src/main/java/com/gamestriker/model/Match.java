@@ -24,8 +24,8 @@ public class Match {
 
     private Integer roundNumber;
 
-    private Long player1Id; // referential by id for decoupling simplicity
-    private Long player2Id; // null means bye
+    private Long player1Id;
+    private Long player2Id;
 
     private Integer score1;
     private Integer score2;
