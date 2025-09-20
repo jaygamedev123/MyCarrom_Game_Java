@@ -25,4 +25,8 @@ public class TournamentRegistration {
     private Tournament tournament;
     @ManyToOne(optional = false)
     private Players players;
+
+    public Players getPlayer() {
+        return players;
+    }
 }

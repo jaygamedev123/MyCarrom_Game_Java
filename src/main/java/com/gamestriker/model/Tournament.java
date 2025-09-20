@@ -27,6 +27,7 @@ public class Tournament {
     private String TournamentType;
     private LocalDateTime startAt;
     private LocalDateTime createAt;
+    private boolean started = false;
 
     @OneToMany(mappedBy = "tournament", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TournamentRegistration> registration = new ArrayList<>();
