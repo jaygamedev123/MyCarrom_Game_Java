@@ -2,9 +2,9 @@ spring:
   application:
     name: tournament
   datasource:
-    url: jdbc:postgresql://mystrikerpro-dev-aurora.cluster-ch2u2i2skpr5.ap-south-1.rds.amazonaws.com/mystrikerpro
-    username: masteruser
-    password: NMgQ-boMJMqsKYvi
+    url: jdbc:postgresql://localhost:5432/striker_auth
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -55,6 +55,5 @@ management:
       prometheus:
         enabled: true
         step: 1m
-
 hibernate:
   dialect: org.hibernate.dialect.PostgreSQLDialect
