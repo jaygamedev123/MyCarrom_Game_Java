@@ -1,4 +1,4 @@
-package com.gamestriker.model;
+package com.gamestriker.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

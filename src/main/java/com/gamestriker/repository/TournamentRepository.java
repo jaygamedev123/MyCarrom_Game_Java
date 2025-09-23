@@ -1,6 +1,6 @@
 package com.gamestriker.repository;
 
-import com.gamestriker.model.Tournament;
+import com.gamestriker.entity.Tournament;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

@@ -1,7 +1,7 @@
 package com.gamestriker.repository;
 
-import com.gamestriker.model.Tournament;
-import com.gamestriker.model.TournamentRegistration;
+import com.gamestriker.entity.Tournament;
+import com.gamestriker.entity.TournamentRegistration;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

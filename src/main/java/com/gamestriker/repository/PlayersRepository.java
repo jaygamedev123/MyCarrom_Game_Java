@@ -1,6 +1,6 @@
 package com.gamestriker.repository;
 
-import com.gamestriker.model.Players;
+import com.gamestriker.entity.Players;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
