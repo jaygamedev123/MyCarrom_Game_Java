@@ -1,6 +1,6 @@
 package com.gamestriker.controller;
 
-import com.gamestriker.service.impl.IRoomMembersMgtService;
+import com.gamestriker.service.IRoomMembersMgtService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 

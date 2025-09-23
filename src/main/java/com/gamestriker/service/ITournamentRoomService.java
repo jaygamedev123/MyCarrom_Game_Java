@@ -1,4 +1,4 @@
-package com.gamestriker.service.impl;
+package com.gamestriker.service;
 
 public interface ITournamentRoomService {
     void createTournamentRoom(String roomName, int capacity);

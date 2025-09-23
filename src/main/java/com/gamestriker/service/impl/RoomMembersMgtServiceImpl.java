@@ -1,6 +1,6 @@
-package com.gamestriker.service;
+package com.gamestriker.service.impl;
 
-import com.gamestriker.service.impl.IRoomMembersMgtService;
+import com.gamestriker.service.IRoomMembersMgtService;
 import org.springframework.stereotype.Service;
 
 @Service

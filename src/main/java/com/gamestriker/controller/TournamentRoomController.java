@@ -1,7 +1,7 @@
 package com.gamestriker.controller;
 
 
-import com.gamestriker.service.impl.ITournamentRoomService;
+import com.gamestriker.service.ITournamentRoomService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
