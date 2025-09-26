@@ -1,11 +1,11 @@
+
 spring:
-  application:
-    name: tournament
   datasource:
-    url: jdbc:postgresql://mystrikerpro-dev-aurora.cluster-ch2u2i2skpr5.ap-south-1.rds.amazonaws.com/mystrikerpro
-    username: masteruser
-    password: NMgQ-boMJMqsKYvi
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/gamestriker?useSSL=false&serverTimezone=UTC
+    username: root
+    password: admin1999
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,17 +13,22 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
 server:
   port: 8080
   servlet:
     context-path: /tournament
-  error:
-    whitelabel:
-      enabled: false
-  compression:
-    enabled: true
-    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
-    min-response-size: 1024
+
+error:
+  whitelabel:
+    enabled: false
+
+compression:
+  enabled: true
+  mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+  min-response-size: 1024
+
 logging:
   level:
     root: INFO
@@ -39,22 +44,3 @@ logging:
       file-name-pattern: logs/gamestriker-%d{yyyy-MM-dd}.%i.log.gz
       max-file-size: 10MB
       max-history: 30
-      total-size-cap: 1GB
-  loggers:
-    com.example.gamestriker: DEBUG
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-  endpoint:
-    health:
-      show-details: always
-  metrics:
-    export:
-      prometheus:
-        enabled: true
-        step: 1m
-
-hibernate:
-  dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,17 +1,22 @@
 package com.gamestriker.controller;
 
-import com.gamestriker.service.impl.ITournamentService;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
-@Slf4j
+@Tag(name = "Tournament", description = "Tournament management APIs")
 @RestController
+@RequestMapping("/api/tournaments")
 public class TournamentController {
-    private final ITournamentService tournamentService;
 
-    public TournamentController(ITournamentService tournamentService) {
-        this.tournamentService = tournamentService;
+    @GetMapping
+    public String getAllTournaments() {
+        return "List of tournaments";
     }
 
-    // Add methods to handle tournament-related operations
+    @PostMapping
+    public String createTournament() {
+        return "Create a tournament";
+    }
+
+    // Add more endpoints here
 }

@@ -6,9 +6,13 @@ import lombok.Setter;
 
 @Entity
 @Setter
-public class Tournament extends Auditing {    @Id
+public class Tournament extends Auditing {
 
-private String tournamentId;
+
+    @Id
+
+    private String tournamentId;
+
     private String gameId;
     private String tournamentName;
     private String startDate;
