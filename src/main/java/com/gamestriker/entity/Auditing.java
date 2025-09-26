@@ -1,4 +1,4 @@
-package com.gamestriker.dto;
+package com.gamestriker.entity;
 
 import lombok.Getter;
 import lombok.Setter;

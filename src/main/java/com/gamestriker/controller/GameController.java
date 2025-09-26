@@ -1,6 +1,6 @@
 package com.gamestriker.controller;
 
-import com.gamestriker.service.impl.IGameService;
+import com.gamestriker.service.IGameService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
