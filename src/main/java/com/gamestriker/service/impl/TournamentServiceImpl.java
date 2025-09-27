@@ -1,6 +1,6 @@
-package com.gamestriker.service;
+package com.gamestriker.service.impl;
 
-import com.gamestriker.service.impl.ITournamentService;
+import com.gamestriker.service.ITournamentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

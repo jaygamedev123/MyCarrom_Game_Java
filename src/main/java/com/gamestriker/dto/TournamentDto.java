@@ -1,12 +1,13 @@
 package com.gamestriker.dto;
 
+import com.gamestriker.entity.Auditing;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Setter;
 
 @Entity
 @Setter
-public class Tournament extends Auditing {    @Id
+public class TournamentDto extends Auditing {    @Id
 
 private String tournamentId;
     private String gameId;
