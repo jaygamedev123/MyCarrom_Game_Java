@@ -21,7 +21,7 @@ public class GameStrikerApplication {
         ApplicationContext applicationContext = contextRefreshedEvent.getApplicationContext();
         var handlerMapping = applicationContext.getBean("requestMappingHandlerMapping",
                 RequestMappingHandlerMapping.class);
-        handlerMapping.getHandlerMethods().forEach((key, value) -> System.out.println(key));
+        handlerMapping.getHandlerMethods().forEach((key, value) -> log.info(String.valueOf(key)));
     }
 
 }

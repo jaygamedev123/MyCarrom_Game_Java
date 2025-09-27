@@ -17,7 +17,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RoomMembersMgt extends Auditing{
+public class RoomMembersMgt extends Auditing {
 
     @Id
     @GeneratedValue
@@ -27,6 +27,7 @@ public class RoomMembersMgt extends Auditing{
 
     private UUID creatorUserId;  // main user who created the room
     private UUID memberUserId;   // second member who joined
+    private boolean isDrooped;   // second member who joined (part of game or not )
 
-    private UUID winnerUserId;
+    private boolean isWinner;
 }

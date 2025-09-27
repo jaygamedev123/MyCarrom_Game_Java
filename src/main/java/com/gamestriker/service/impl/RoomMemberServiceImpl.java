@@ -4,7 +4,7 @@ import com.gamestriker.dto.ApiResponse;
 import com.gamestriker.dto.RoomMembersDto;
 import com.gamestriker.entity.RoomMembersMgt;
 import com.gamestriker.repository.IRoomMemberMgtRepository;
-import com.gamestriker.service.IRoomMembersMgtService;
+import com.gamestriker.service.IRoomMemberService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -16,7 +16,7 @@ import java.util.UUID;
 @Slf4j
 @Service("roomMemberService")
 @AllArgsConstructor
-public class RoomMembersMgtServiceImpl implements IRoomMembersMgtService {
+public class RoomMemberServiceImpl implements IRoomMemberService {
 
     private final IRoomMemberMgtRepository roomMemberRepo;
 
@@ -56,7 +56,7 @@ public class RoomMembersMgtServiceImpl implements IRoomMembersMgtService {
         log.info("Updating winner for roomMemberId: {}", roomMemberId);
         return roomMemberRepo.findById(roomMemberId)
                 .map(roomMember -> {
-                    roomMember.setWinnerUserId(winnerUserId);
+                    roomMember.setWinner(true);
                     RoomMembersMgt updated = roomMemberRepo.save(roomMember);
                     return ApiResponse.builder()
                             .httpStatus(HttpStatus.OK)
@@ -68,5 +68,33 @@ public class RoomMembersMgtServiceImpl implements IRoomMembersMgtService {
                         .httpStatus(HttpStatus.NOT_FOUND)
                         .message("Room member not found")
                         .build());
+    }
+
+    @Override
+    public ApiResponse removeRoomMember(UUID roomMemberId) {
+        log.info("Removing room member with id: {}", roomMemberId);
+        try {
+            RoomMembersMgt roomMember = roomMemberRepo.findById(roomMemberId).orElse(null);
+            if (roomMemberRepo.existsById(roomMemberId)) {
+                assert roomMember != null;
+                roomMember.setDrooped(true);
+                roomMemberRepo.save(roomMember);
+                return ApiResponse.builder()
+                        .httpStatus(HttpStatus.OK)
+                        .message("Room member removed successfully")
+                        .build();
+            } else {
+                return ApiResponse.builder()
+                        .httpStatus(HttpStatus.NOT_FOUND)
+                        .message("Room member not found")
+                        .build();
+            }
+        } catch (Exception e) {
+            log.error("Error removing room member with id: {}", roomMemberId, e);
+            return ApiResponse.builder()
+                    .httpStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .message("Error removing room member")
+                    .build();
+        }
     }
 }
